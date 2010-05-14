@@ -1,6 +1,7 @@
 <?php
 
 include_once "config.php";
+include_once "base.php";
 include_once "blog.php";
 include_once "project.php";
 include_once "notes.php";
