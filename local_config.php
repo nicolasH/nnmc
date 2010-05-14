@@ -19,6 +19,9 @@ define('PROJECTS_DIR','projects/');
 define('TEXTENSION','.text');
 define('BLURB','.blurb');
 
+$analytics='<!-- no analytics on the dev web site-->';
+
+
 $specialPages = array(
 	'colophon'=> BASE_PATH.'pages/colophon.text',
 	'banner'=> BASE_PATH.'pages/banner.text',
