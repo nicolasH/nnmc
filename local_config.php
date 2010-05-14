@@ -3,11 +3,9 @@
 #define('BASE_PATH', '~niko/tests/w2n-remote/');// leave any trailing slash
 #define('BASE_URI', '~niko/tests/w2n-remote');// Omit any trailing slash
 define('BASE_PATH', '/Users/niko/Sites/nnmc/content_nnmc/');// leave any trailing slash
-define('BASE_URI', '/~niko/nnmc/');	// Omit any trailing slash
+define('BASE_URI', '/~niko/nnmc/');// Omit any trailing slash
 define('DEFAULT_PAGE', 'notes/Home.txt');
-define('DISABLE_UPLOADS', true);
 define('CSS_FILE', 'index.css');
-define('MOBILE_CSS_FILE', 'index.mobile.css');
 
 define('SITE_NAME',"NICONOMICON");
 define('BLOG_POST_NUMBER',5);
@@ -29,8 +27,6 @@ $specialPages = array(
 	//'' =>'pages/home.text'
 	);
 define('HOME_PAGE','pages/home.text');
-$actionStart = array("new","edit","import","login");
-$actionEnd= array("delete","save","create","logout");
 	
 $categories = array(
 	"blog/"=>"well, my blog. Duh.",
@@ -62,26 +58,10 @@ $replaced=array("\t"," ","?","&","!","-","_","/","\\");
 
 //define('BASE_PATH', getcwd());					// Omit any trailing slash
 //define('BASE_URI', 'http://stevenf.com/pw2');	// Omit any trailing slash
-//define('DEFAULT_PAGE', 'Home');
-//define('DISABLE_UPLOADS', false);
-define('VALID_UPLOAD_TYPES', 'image/jpeg,image/pjpeg,image/png,image/gif,application/pdf,application/zip,application/x-diskcopy');
-define('VALID_UPLOAD_EXTS', 'jpg,jpeg,png,gif,pdf,zip,dmg');
 define('TITLE_DATE', 'r');
-
-define('EDIT_ROWS', 20);
-define('EDIT_COLS', 80);
 
 #define('CONTENT_HANDLER','markdown.php');
 define('CONTENT_HANDLER','markdown_extra.php');
-
-
-//define('REQUIRE_PASSWORD', true);
-define('EDIT_ONLY',1);
-define('ACCESS',2);
-define('NEVER',0);
-
-define('REQUIRE_PASSWORD',1 );//
-define('W2_PASSWORD', 'n0tS3cr3t');
 
 ////////////////////////////
 // PRINT POST 
