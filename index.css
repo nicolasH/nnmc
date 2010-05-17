@@ -1,6 +1,5 @@
 /* @override http://127.0.0.1/~niko/nnmc/index.css */
 
-/*@import url("http://yui.yahooapis.com/2.6.0/build/reset/reset-min.css");*/
 html{
 	color:#ffffff;
 	font-family: "Adobe Myriad", Helvetica,Verdana, Georgia, Arial, "Sans Serif";
@@ -11,11 +10,12 @@ html{
 
 body {
 	font-family: "Adobe Myriad", Helvetica, Verdana,Georgia, Arial, "Sans Serif";
-	background:#707070;
+	background-color: #333;
 	color:#ffffff;
 	font-size: 12pt;
 	margin: -0px;
 	text-align: left;
+	
 	}
 
 h1 {
@@ -25,7 +25,6 @@ h1 {
 }
 
 h2 {
-	font-style: ;
 	font-size: 16px;
 	margin-top: 16px;
 	margin-bottom: 16px;
@@ -38,40 +37,46 @@ h3 {
 	margin-bottom: 14px;
 }
 
-div.banner {
+.banner {
 	font-weight: bolder;
-	padding:15px;
-	padding-bottom: 9px;
+	padding-top:12px;
+	padding-bottom: 12px;
+	padding-right: 12px;
+	padding-left: 12px;
 	background: black;
+	width:486px;
+	margin: 0 auto;
 }
 
 .banner a{
-	font-size: 28px;
+	font-size: 40px;
 	text-decoration: none;
 }
 
 .toolbar {
 	background-color: #4c4c4c;
-	margin:0px;
-	padding:0px;
+	margin: -0px auto;
 	padding: 5px;
+	width: 500px;
+	text-align: center;
 }
+	
 .toolbar a, .toolbar a:hover,a.category-link.selected{
 	font-style: bold;
 	font-size : 13pt;
-	width:100px;
+	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom:5px;
 	padding-top:5px;
-	height:40px;
-	
+
 }
 .toolbar a:hover {
 	background-color: #606060;
-}
+	
+	}
 a.category-link.selected{
-	background-color: #707070;
+	background-color: #707070;	
 }
 
 div.nav a,a.date{
@@ -81,12 +86,13 @@ div.nav a,a.date{
 }
 
 div.main{
+	background:#707070;
 	width: 500px;	
 	padding-top: 0px;
-	padding-right: 4px;
-	padding-bottom: 4px;
-	padding-left: 4px;
-	margin: 0px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	margin: -0px auto;
 }
 
 div {
@@ -100,9 +106,6 @@ div.title{
 	text-transform: uppercase;	
 }
 
-div.list div.title{
-	text-align: left;
-}
 div.list div.title a{
 	text-transform: none;
 	font-size: 14px;
@@ -125,6 +128,7 @@ div.title a {
 }
 
 div.post{
+	padding: 0px;
 	padding-top: 10px;
 	margin: -0px;
 	line-height: 15pt;
@@ -138,9 +142,9 @@ div.content{
 	margin: -0px;
 }
 code{
-	width:500px;
 	font-size: 10pt;
 	line-height: 10pt;
+	max-width: 480px;
 }
 ul,ol{
 	margin-top: 4px;
@@ -152,18 +156,15 @@ ul{
 }
 
 li {
-	margin-left: 20px;
+	margin-left: 0px;
 }
 
 table {
 	margin-top: 10px;
 	font-size: 11pt;
 	margin-bottom: 10px;
-	border:solid;
-	border-width:1px;
-}
-em{
-	font-weight:bold;
+/*	border:solid;
+	border-width:1px;*/
 }
 th{	
 	font-weight:bold;
@@ -177,30 +178,16 @@ td{
 	padding-left: 5px;
 }
 
-textarea {
-	background-color:#808080;
-	font-family: Helvetica,Arial,Georgia;
-	font-size: 13px;
-	margin:5px;
-	}
+img{
+	border: none;
+	text-align: center;
+	margin: 0 auto;
 
-textarea#text {
-	color: #eaeaea;
 }
-
-
 
 a{
 	color:darkorange;
 	text-decoration: none;
 }
 
-/*a.tool {
-	padding-right: 8px;
-	margin: 0px;
-}*/
-
-input{
-	background-color:#d0d0d0;
-}
 
