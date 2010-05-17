@@ -53,6 +53,15 @@ h3 {
 	text-decoration: none;
 }
 
+.footer {
+	font-size: 10pt;
+	padding:12px;
+	background: black;
+	width:486px;
+	margin: 0 auto;
+	text-align: center;	
+}
+
 .toolbar {
 	background-color: #4c4c4c;
 	margin: -0px auto;
@@ -182,7 +191,6 @@ img{
 	border: none;
 	text-align: center;
 	margin: 0 auto;
-
 }
 
 a{

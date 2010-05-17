@@ -12,18 +12,14 @@ include_once CONTENT_HANDLER;
 ///////////////////////
 // $html.= HEAD
 function printHead(){
-  global $mobile, $iphone,$title;
+  global $title;
 	$html= "
 	<head>
 		<title> $title : ".SITE_NAME."</title>
 		<meta name=\"viewport\" content=\"width=500, user-scalable=yes\">
 		<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . CSS_FILE ."\" />
 ";
-	if($mobile){
-		$html.= "<meta name=\"viewport\" content=\"width=500, user-scalable=yes\">";
-		$html.= "<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI. MOBILE_CSS_FILE ."\" />\n";
-	}
-	$html.= "</head>\n";
+	$html.= "\t</head>\n";
 	return $html;
 }
 
@@ -46,13 +42,6 @@ function printTopBar($category,$bottom="")
 	$html.= "\t</div>\n";
 	return $html; 
 }
-
-////////////////////////
-//PRINT BANNER
-function printBanner(){
-	return "\n\t".'<div class="banner">&nbsp;<a href="'.BASE_URI.'">NICONOMICON</a> (the)</div>'."\n";	
-}
-
 
 ////////////////////////
 // EXPAND IN LINK
@@ -132,7 +121,7 @@ function printErrorText(){
 	$errorPage=true;
 	return "<br/><br/><center><h3>Sorry , the page you are looking for doesn't exist :-( .<br/><br/>
 	You can go to the <a href=\"".BASE_URI."\">main page</a> of the site  or try a 
-	<a href=\"http://www.google.com/search?q=inurl%3Aniconomicon.net\">google search</a> ?
+	<a href=\"".SEARCH_QUERY."\">web search</a> ?
 	</h3></center><br/><br/>\n";
 }
 function printErrorMessage($error){
@@ -194,7 +183,7 @@ function printBody(){
     $elements = split("/",$request);
 	$html= "
 	<body>";
-	$html.=printBanner();
+	$html.=BANNER;
 	$category=getCategoryField($request);
 	$top=printTopBar($category);
 	$html.=$top;
@@ -204,6 +193,7 @@ function printBody(){
 		//breadcrumbs should be initialized now.
 	$html.=$breadcrumbs.$main.$breadcrumbs;
 	$html.=$top;//printTopBar($category);
+	$html.=FOOTER;
 	global $analytics;
 	$html.= "$analytics</body>";
 	return $html;
@@ -212,20 +202,13 @@ function printBody(){
 // MAIN
 ///////////////
 
-/////////////////////
-/////////////////////
 global $errorPage;
 $errorPage=false;
+/*
 $safari = stripos($_SERVER['HTTP_USER_AGENT'], 'safari');
 $iphone = stripos($_SERVER['HTTP_USER_AGENT'], 'mobile') ;
 $blazer = stripos($_SERVER['HTTP_USER_AGENT'], 'blazer');
-$mobile=false;
-if($iphone > 0 && $safari > 0){
-	$mobile=true;
-}
-if($blazer>0){
-	$mobile=true;
-}
+*/
 ////////////////////////////////////
 $title="";
 $breadcrumbs="";

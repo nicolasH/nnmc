@@ -5,6 +5,6 @@
 define('BASE_PATH', '/Users/niko/Sites/nnmc/content_nnmc/');// leave any trailing slash
 define('BASE_URI', '/~niko/nnmc/');// Omit any trailing slash
 
-$analytics='<!-- no analytics on the dev web site-->';
+$analytics="\t<!-- no analytics on the dev web site-->\n";
 
 ?>
