@@ -15,7 +15,7 @@ function printHead(){
   global $mobile, $iphone,$title;
 	$html= "
 	<head>
-		<title>".SITE_NAME." : $title</title>
+		<title> $title : ".SITE_NAME."</title>
 		<meta name=\"viewport\" content=\"width=500, user-scalable=yes\">
 		<link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . CSS_FILE ."\" />
 ";
@@ -96,20 +96,7 @@ function getFileFromRequest($request){
 		return BASE_PATH."blog/".getBlogFileFromRequest($request);
 	}
 	//projects and notes cases
-	//remove all possible action
-	global $actionStart,$actionEnd;
 	$base = "";
-	foreach($actionStart as $action){
-		if(preg_match("/(.+\/)$action$/",$request,$results)){
-			$base=$results[1];
-		}
-	}if($base ==""){
-		foreach($actionEnd as $action){
-			if(preg_match("/(.+\/)$action$/",$request,$results)){
-			$base=$results[1];
-			}
-		}
-	}
 	if($base==""){
 		$base=$request;
 	}

@@ -104,7 +104,7 @@ function getPageHeaderRoot(){
 	for($i = 0; $i < sizeof($pieces); $i++)	{
 		$pieces[$i]=ucwords($pieces[$i]);
 	}
-	return implode(" : ",$pieces);
+	return implode(" : ",array_reverse($pieces));
 }
 
 ?>
