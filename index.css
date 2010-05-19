@@ -1,62 +1,57 @@
 /* @override http://127.0.0.1/~niko/nnmc/index.css */
 
 html{
-	color:#ffffff;
+	color: #ffffff;
 	font-family: "Adobe Myriad", Helvetica,Verdana, Georgia, Arial, "Sans Serif";
-	background:#00000;
+	background-color: #333;
 	margin:-0px;
 	padding: -0px;
 }
 
 body {
 	font-family: "Adobe Myriad", Helvetica, Verdana,Georgia, Arial, "Sans Serif";
-	background-color: #333;
-	color:#ffffff;
-	font-size: 12pt;
+	font-size: 100%;
 	margin: -0px;
 	text-align: left;
 	
 	}
 
 h1 {
-	font-size: 18px;
+	font-size: 1.5em;
 	margin-top: 18px;
 	margin-bottom: 18px;
 }
 
 h2 {
-	font-size: 16px;
+	font-size: 1.1em;
 	margin-top: 16px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
 }
 
 h3 {
-	font-size: 14px;
+	font-size: 1em;
 	margin-top: 14px;
 	margin-bottom: 14px;
 }
 
 .banner {
 	font-weight: bolder;
-	padding-top:12px;
-	padding-bottom: 12px;
-	padding-right: 12px;
-	padding-left: 12px;
-	background: black;
+	padding:12px;
+	background-color: black;
 	width:486px;
 	margin: 0 auto;
 }
 
 .banner a{
-	font-size: 40px;
+	font-size: 2.5em;
 	text-decoration: none;
 }
 
 .footer {
-	font-size: 10pt;
+	font-size: 0.75em;
 	padding:12px;
-	background: black;
+	background-color: black;
 	width:486px;
 	margin: 0 auto;
 	text-align: center;	
@@ -72,7 +67,7 @@ h3 {
 	
 .toolbar a, .toolbar a:hover,a.category-link.selected{
 	font-style: bold;
-	font-size : 13pt;
+	font-size : 1.1em;
 	text-align: center;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -90,12 +85,12 @@ a.category-link.selected{
 
 div.nav a,a.date{
 	font-weight: bold;
-	color: #4c4c4c;
+	color: #333;
 	/*darkslateblue;*/
 }
 
 div.main{
-	background:#707070;
+	background-color: #707070;
 	width: 500px;	
 	padding-top: 0px;
 	padding-right: 5px;
@@ -113,46 +108,40 @@ div {
 
 div.title{
 	text-transform: uppercase;	
+	padding: 0px;
 }
 
+/*To make the post list normal foncted and not uppercased*/
 div.list div.title a{
 	text-transform: none;
-	font-size: 14px;
+	font-size: 0.9em;
 	text-align: left;
 }
-div.list div.title {
-	padding: 0px;
-	margin: 0px;
+div.list{
+		line-height: 1em;
 }
-
-a.title{
+.title{
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 1.1em;
 	font-weight: bolder;
-}
-
-div.title a {
-	font-size: 16px;
-	font-weight: bold;
 }
 
 div.post{
 	padding: 0px;
 	padding-top: 10px;
 	margin: -0px;
-	line-height: 15pt;
+	line-height: 1.2em;
 
 }
 
 div.content{
-	//padding-top: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: -0px;
 }
 code{
-	font-size: 10pt;
-	line-height: 10pt;
+	font-size: 1em;
+	line-height: 1em;
 	max-width: 480px;
 }
 ul,ol{
@@ -170,10 +159,8 @@ li {
 
 table {
 	margin-top: 10px;
-	font-size: 11pt;
+	font-size: 1em;
 	margin-bottom: 10px;
-/*	border:solid;
-	border-width:1px;*/
 }
 th{	
 	font-weight:bold;
@@ -186,15 +173,13 @@ td{
 	padding-right: 13px;
 	padding-left: 5px;
 }
-
 img{
 	border: none;
-	text-align: center;
 	margin: 0 auto;
 }
 
 a{
-	color:darkorange;
+	color: darkorange;
 	text-decoration: none;
 }
 
