@@ -139,9 +139,20 @@ div.content{
 	padding-right: 10px;
 	margin: -0px;
 }
+/*Just because I find the default font too big.*/
+div.embedded_gist{
+	margin-left: -10px;
+	padding-left: 0px;
+	font-size: 0.7em;
+}
 code{
-	font-size: 1em;
-	line-height: 1em;
+    font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+   	font-size: .7em;
+	max-width: 480px;
+}
+.code{
+    font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+   	font-size: .7em;
 	max-width: 480px;
 }
 ul,ol{
