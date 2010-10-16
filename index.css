@@ -1,28 +1,30 @@
 /* @override http://127.0.0.1/~niko/nnmc/index.css */
 
 html{
-	color: #ffffff;
-	font-family: "Adobe Myriad", Helvetica,Verdana, Georgia, Arial, "Sans Serif";
-	background-color: #333;
+	color: #808080;
+	font-family: "Adobe Myriad","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: #333333;
 	margin:-0px;
 	padding: -0px;
+	text-shadow: #000 1px 1px 0;
 }
 
 body {
 	font-family: "Adobe Myriad", Helvetica, Verdana,Georgia, Arial, "Sans Serif";
-	font-size: 100%;
+	font-size: 92%;
 	margin: -0px;
 	text-align: left;
-	
-	}
+}
 
 h1 {
+	color: #a0a0a0;
 	font-size: 1.5em;
 	margin-top: 18px;
 	margin-bottom: 18px;
 }
 
 h2 {
+	color: #a0a0a0;
 	font-size: 1.1em;
 	margin-top: 16px;
 	margin-bottom: 16px;
@@ -30,6 +32,7 @@ h2 {
 }
 
 h3 {
+	color: #a0a0a0;
 	font-size: 1em;
 	margin-top: 14px;
 	margin-bottom: 14px;
@@ -41,6 +44,8 @@ h3 {
 	background-color: black;
 	width:486px;
 	margin: 0 auto;
+	color: #ffffff;
+	text-shadow: none;
 }
 
 .banner a{
@@ -58,7 +63,7 @@ h3 {
 }
 
 .toolbar {
-	background-color: #4c4c4c;
+	background-color: #606060;
 	margin: -0px auto;
 	padding: 5px;
 	width: 500px;
@@ -76,21 +81,20 @@ h3 {
 
 }
 .toolbar a:hover {
-	background-color: #606060;
+	background-color: #474747;
 	
 	}
 a.category-link.selected{
-	background-color: #707070;	
+	background-color: #333333;
 }
 
 div.nav a,a.date{
-	font-weight: bold;
-	color: #333;
-	/*darkslateblue;*/
+	color: #000000;
+	text-shadow: none;
 }
 
 div.main{
-	background-color: #707070;
+	background-color: #333333;
 	width: 500px;	
 	padding-top: 0px;
 	padding-right: 5px;
@@ -111,26 +115,25 @@ div.title{
 	padding: 0px;
 }
 
-/*To make the post list normal foncted and not uppercased*/
+/*To make the post list normal fonted and not uppercased*/
 div.list div.title a{
 	text-transform: none;
 	font-size: 0.9em;
 	text-align: left;
 }
 div.list{
-		line-height: 1em;
+	line-height: 1em;
 }
 .title{
 	text-transform: uppercase;
-	font-size: 1.1em;
-	font-weight: bolder;
+	font-size: 1em;
 }
 
 div.post{
 	padding: 0px;
 	padding-top: 10px;
 	margin: -0px;
-	line-height: 1.2em;
+	line-height: 1.3em;
 
 }
 
@@ -144,24 +147,18 @@ div.embedded_gist{
 	margin-left: -10px;
 	padding-left: 0px;
 	font-size: 0.7em;
+	text-shadow: none;
 }
-code{
+pre code, code{
     font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-   	font-size: .7em;
+   	font-size: 0.75em;
 	max-width: 480px;
+	color: #AAA;
 }
-.code{
-    font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-   	font-size: .7em;
-	max-width: 480px;
-}
+
 ul,ol{
 	margin-top: 4px;
 	margin-bottom: 4px;
-	list-style-position: outside;
-}
-ul{
-	list-style-type: disc;
 }
 
 li {
