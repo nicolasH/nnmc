@@ -31,10 +31,10 @@ $specialPages = array(
 
 	
 $categories = array(
-	"blog/"=>"well, my blog. Duh.",
-	"notes/"=>"just not as pretentious as 'article'",
-	"projects/"=>"Some of the projects I have been working on",
-	"colophon"=>"about this website");
+	"blog/"=>"Well, a set of posts loosely related to me and each other organized in a reverse chronological order.",
+	"notes/"=>"Just not as pretentious as 'article'",
+	"projects/"=>"Some of the projects I have been (and may still be) working on.",
+	"colophon"=>"More informations about this website and your host.");
 
 $shortcuts=array(
 	'(n/'=>'('.BASE_URI.'notes/',
