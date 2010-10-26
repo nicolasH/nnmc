@@ -12,7 +12,24 @@ It currently supports a content directory with subfolders for a blog, some notes
 
 - The 'pages' directory contains the content of the home page and the colophon.
 
-You can adjust global settings in the 'base.php' and local or production settings in local / prod _config.php files.
+You can adjust global settings in the 'base.php' for options common between local and remote version, and local or production settings in local / prod _config.php files.
+
+To deploy the script in an already existing directory :
+
+	git init
+	git remote add origin git://github.com/nicolasH/nnmc.git
+	git fetch origin
+
+The following command will actually make the files appear in the directory. I use the `-f` to overwrite the files that are both in the repository and on the website.
+
+	git checkout -f -t origin/master -b master
+	
+Then just run the script that symlinks the .htaccess and config.php to your location-appropriate files:
+	
+	bash setup.sh prod
+or 
+	bash setup.sh local
+
 
 The css design is currently inspired by [http://avandamiri.com/](http://avandamiri.com/) .
 
