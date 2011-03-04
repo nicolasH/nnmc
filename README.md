@@ -39,4 +39,5 @@ It uses php markdown extra by [Michel Fortin](http://michelf.com/)
 
 Author : Nicolas HOIBIAN
 
+Copyright 2011
 This software is Licensed under the GPL v2.
