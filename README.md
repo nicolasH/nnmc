@@ -31,7 +31,7 @@ or
 	bash setup.sh local
 
 
-The css design is currently inspired by [http://avandamiri.com/](http://avandamiri.com/) .
+The css design borrows from [http://avandamiri.com/](http://avandamiri.com/) and [http://neugierig.org/](http://neugierig.org/).
 
 It uses php markdown extra by [Michel Fortin](http://michelf.com/)
 
