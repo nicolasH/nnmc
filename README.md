@@ -30,7 +30,7 @@ Then just run the script that symlinks the .htaccess and config.php to your loca
 or 
 	bash setup.sh local
 
-To automate the deployment process, you can copy your ssh public key on your web host and add a remote repository to your config. With the appropriate `post-receive` (or is it `post-update`??) hooks, pushing should also deploys the new version ( I added `cd /home/public;git checkout -f`).
+To automate the deployment process, you can copy your ssh public key on your web host and add a remote repository to your config. With the appropriate `post-receive` (or is it `post-update`??) hooks, pushing should also deploys the new version ( I added `cd /home/public/;git checkout -f`).
 
 
 The css design borrows from [http://avandamiri.com/](http://avandamiri.com/) and [http://neugierig.org/](http://neugierig.org/).
