@@ -66,8 +66,8 @@ a{
 #banner{
 	font-weight: bolder;
 	/*background-color: rgba(0,0,0,0.5);*/
-	border-left:2px solid darkgray;
-	border-bottom:2px solid darkgray;
+	border-left:2px solid #808080;
+	border-bottom:2px solid #808080;
 }
 
 #banner , #footer , #navigation, .nav{
@@ -100,7 +100,7 @@ a{
 	bottom: 0px;
 	height: 30px;
 	padding:10px;
-		border-left: 2px solid darkgray;
+		border-left: 2px solid #808080;
 }
 
 span.date{
@@ -110,7 +110,7 @@ span.date{
 }
 .nav{
 	#background-color: rgba(0,0,0,0.2);
-	border-left: 2px solid darkgray;
+	border-left: 2px solid #808080;
 	text-align: left;
 	bottom: 0px;
 	padding-bottom: 60px;
@@ -143,7 +143,7 @@ span.date a, div.nav a{
 	padding-top:5px;
 	/*background-color: #606060;*/
 	width: 100px;
-	border-left: 2px solid darkgray;
+	border-left: 2px solid #808080;
 }
 #navigation a:hover {
 	background-color: rgba(0,0,0,0.1);/*#2E2E2E;*/
@@ -151,7 +151,7 @@ span.date a, div.nav a{
 
 #navigation a.category-link.selected{
 	/*background-color: rgba(51,51,51,0.5);*/
-	border: 2px solid darkgray;
+	border: 2px solid #808080;
 	border-left: none;	
 }
 
