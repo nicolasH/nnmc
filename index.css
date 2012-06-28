@@ -14,10 +14,11 @@ html{
 }
 
 body {
-	font-family: "Adobe Myriad", Helvetica, Verdana,Georgia, Arial, "Sans Serif";
+	font-family: "Adobe Myriad", "Helvetica Neue",Helvetica, Verdana,Georgia, Arial, "Sans Serif";
 	font-size: 92%;
 	margin: -0px;
 	text-align: left;
+	
 }
 
 h1 {
@@ -48,6 +49,12 @@ div {
 	padding-bottom: 5px;
 	padding-right:3px;
 }
+
+a{
+	color: darkorange;
+	text-decoration: none;
+}
+
 /*The column that contains everything*/
 #wrapper{
 	padding: 0px;
@@ -57,14 +64,14 @@ div {
 
 /* The website title */
 #banner{
-	color: #ffffff;
 	font-weight: bolder;
-	background-color: rgba(0,0,0,0.5);
+	/*background-color: rgba(0,0,0,0.5);*/
+	border-left:2px solid darkgray;
+	border-bottom:2px solid darkgray;
 }
 
-#banner , #footer , .nav, .toolbar{
+#banner , #footer , #navigation, .nav{
 	text-align: center;
-	text-shadow: none;
 	float: right;
 	position: fixed;
 	display: inline;
@@ -86,48 +93,47 @@ div {
 }
 
 #footer {
-	background-color: rgba(0,0,0,0.5);
+	text-align: left;
+	#background-color: rgba(0,0,0,0.5);
 	font-size: 0.75em;
 	padding:12px;
 	bottom: 0px;
 	height: 30px;
 	padding:10px;
+		border-left: 2px solid darkgray;
 }
 
-div.nav a,a.date{
-	color: #000000;
-	text-shadow: none;
-}
 span.date{
 	margin-left: -100px;
 	width: 120px;
 	padding-right: 10px;
 }
 .nav{
-	background-color: rgba(0,0,0,0.2);
+	#background-color: rgba(0,0,0,0.2);
+	border-left: 2px solid darkgray;
 	text-align: left;
 	bottom: 0px;
 	padding-bottom: 60px;
 }
-div.nav a{
-	color: white;
+span.date a, div.nav a{
+	line-height: 20px;
 }
 
 
-.toolbar {
-	top: 80px;
+#navigation {
+	position: fixed;
+	top: 50px;
 	margin-left: 510px;
 	width:260px;
-	background-color: rgba(0,0,0,0.2);
+	/*background-color: rgba(0,0,0,0.2);*/
 	padding: 0px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	text-align: center;
+	text-align: center;	
 }
-.toolbar a{
+#navigation span{
+	height: 30px;
+}
+#navigation a, #navigation span, #navigation a, #navigation a:hover, #navigation a.category-link.selected{
 	float: left;
-}	
-.toolbar a, .toolbar a:hover,a.category-link.selected{
 	font-style: bold;
 	font-size : 1.1em;
 	text-align: left;
@@ -137,13 +143,16 @@ div.nav a{
 	padding-top:5px;
 	/*background-color: #606060;*/
 	width: 100px;
+	border-left: 2px solid darkgray;
 }
-.toolbar a:hover {
-	background-color: rgba(46,46,46,0.5);/*#2E2E2E;*/
+#navigation a:hover {
+	background-color: rgba(0,0,0,0.1);/*#2E2E2E;*/
 }
 
-a.category-link.selected{
-	background-color: rgba(51,51,51,0.5);
+#navigation a.category-link.selected{
+	/*background-color: rgba(51,51,51,0.5);*/
+	border: 2px solid darkgray;
+	border-left: none;	
 }
 
 div.title{
@@ -220,11 +229,6 @@ td{
 img{
 	border: none;
 	margin: 0 auto;
-}
-
-a{
-	color: darkorange;
-	text-decoration: none;
 }
 
 

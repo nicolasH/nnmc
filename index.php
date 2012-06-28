@@ -25,10 +25,11 @@ function printHead(){
 
 ////////////////////////
 // $html.= TOP BAR
-function printTopBar($category,$bottom="")
+function printTopBar($category)
 {
         global $categories;
-        $html= "\n\t<div class=\"toolbar$bottom\">\n";
+        $html= "\n\t<div id=\"navigation\">\n";
+        $html.= "\t\t<span class=\"spacer\">&nbsp;</span>\n";
         $i=0;
         foreach($categories as $name => $alt){
            #$html.= "cateogry : [$name, $category] strcmp=".strcmp($name,$category);
@@ -39,6 +40,7 @@ function printTopBar($category,$bottom="")
         $html.= '" href="'.BASE_URI.$name.'" title="'.$alt.'">'.$name.'</a>'."\n";
         $i++;
         }
+        $html.= "\t\t<span class=\"spacer\">&nbsp;</span>\n";
         $html.= "\t</div>\n";
         return $html;
 }
