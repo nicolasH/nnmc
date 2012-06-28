@@ -16,9 +16,9 @@ function printHead(){
         $html= "
         <head>
                 <title> $title ~ ".SITE_NAME."</title>
-                <meta name=\"viewport\" content=\"width=500, user-scalable=yes\">
                 <link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . CSS_FILE ."\" />
 ";
+        #<meta name=\"viewport\" content=\"width=500, user-scalable=yes\">
         $html.= "\t</head>\n";
         return $html;
 }
