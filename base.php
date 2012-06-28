@@ -12,8 +12,8 @@ define('SEARCH_QUERY','http://www.google.com/search?q=inurl%3Aniconomicon.net');
 define('SITE_NAME',"NICONOMICON");
 define('BLOG_POST_NUMBER',5);
 
-define('BANNER',"\n\t".'<div class="banner">&nbsp;<a href="'.BASE_URI.'">'.SITE_NAME.'</a> (the)</div>'."\n");
-define('FOOTER',"\n\t".'<div class="footer"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Copyright Nicolas Hoibian</a> since, like 2006 or something.</div>'."\n");
+define('BANNER',"\n\t".'<div id="banner">&nbsp;<a href="'.BASE_URI.'">'.SITE_NAME.'</a> (the)</div>'."\n");
+define('FOOTER',"\n\t".'<div id="pre_footer"> &mdash; ~ &mdash; </div><div id="footer"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Copyright Nicolas Hoibian</a> since, like 2006 or something.</div>'."\n");
 
 define('BLOG_DIR','blog/');
 define('NOTES_DIR','notes/');

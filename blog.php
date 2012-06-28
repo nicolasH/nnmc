@@ -127,10 +127,10 @@ function printBlogPosts($request){
           $preNextFile=getPreNext($dirFiles,$file);
           //$html.=printPostNav($uri,$dir,$preNextFile["pre"],$preNextFile["nxt"],"left");
           $html.=printFile($dir,$file,$uri);
-          $html.="</div>";
+          $html.="</div>"; #end id=blog div
           $html.=printPostNav($uri,$dir,$preNextFile["pre"],$preNextFile["nxt"],"right");
         }else{
-          $html.=listPosts($request,$filter);//$dirFiles,$dir,$uri);
+          $html.=listPosts($request,$filter); #end id=blog div
         }
 
         return $html;
@@ -230,7 +230,7 @@ function listPosts($request,$filter){
                 }
                 $itemCount++;
         }
-        $html.= "<br/>";
+        $html.= "<br/></div>"; #end id=blog div
         $html.=printBlogNav($offset,$offset+$postNumber,count($allFiles),"right");
         return $html;
 }
@@ -260,7 +260,7 @@ function printBlogNav($start,$end,$max,$align){
         $html= "<div class=\"nav\" align=\"$align\">";
         $cnt=$end-$start;
         $offset=$end;
-        $html.= "<a href=\"".BASE_URI.BLOG_DIR."list\">list posts</a>";
+        $html.= "<a href=\"".BASE_URI.BLOG_DIR."list\">List posts</a>";
         if($start>0 && $start-$cnt>=0){
                 $off=$start-$cnt;
 //		$html.= "<a href=\"".BASE_URI.BLOG_DIR."offset/$off/display/$cnt\">&larr; younger posts</a>&nbsp;&nbsp;|";

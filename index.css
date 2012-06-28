@@ -56,13 +56,13 @@ div {
 }
 
 /* The website title */
-.banner{
+#banner{
 	color: #ffffff;
 	font-weight: bolder;
 	background-color: rgba(0,0,0,0.5);
 }
 
-.banner , .footer , .nav, .toolbar{
+#banner , #footer , .nav, .toolbar{
 	text-align: center;
 	text-shadow: none;
 	float: right;
@@ -74,12 +74,18 @@ div {
 	width: 240px;
 }
 
-.banner a{
+#banner a{
 	font-size: 1.8em;
 	text-decoration: none;
 }
+#pre_footer{
+	text-align: center;
+	text-shadow: none;
+	margin: 0 auto;
+	padding: 40px;
+}
 
-.footer {
+#footer {
 	background-color: rgba(0,0,0,0.5);
 	font-size: 0.75em;
 	padding:12px;
@@ -98,9 +104,10 @@ span.date{
 	padding-right: 10px;
 }
 .nav{
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.2);
 	text-align: left;
-	bottom: 50px;
+	bottom: 0px;
+	padding-bottom: 60px;
 }
 div.nav a{
 	color: white;
@@ -108,11 +115,13 @@ div.nav a{
 
 
 .toolbar {
-	top: 50px;
+	top: 80px;
 	margin-left: 510px;
 	width:260px;
 	background-color: rgba(0,0,0,0.2);
 	padding: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 .toolbar a{
@@ -136,17 +145,6 @@ div.nav a{
 a.category-link.selected{
 	background-color: rgba(51,51,51,0.5);
 }
-/*
-div.main{
-	background-color: #333333;
-	width: 500px;
-	min-width: 500px;
-	padding-top: 0px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	padding-left: 5px;
-	margin: -0px auto;
-}*/
 
 div.title{
 	text-transform: uppercase;	
