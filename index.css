@@ -5,102 +5,103 @@
 */
 
 html{
-	color: #808080;
-	font-family: "Adobe Myriad","Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	background-color: #333333;
+	font-family: Helvetica, Arial, "Helvetica Neue", Geneva, sans-serif;
+	background-color: white;
 	margin:-0px;
 	padding: -0px;
-	text-shadow: #000 1px 1px 0;
+	color: black;
+	font-weight: lighter;
 }
 
 body {
-	font-family: "Adobe Myriad", "Helvetica Neue",Helvetica, Verdana,Georgia, Arial, "Sans Serif";
-	font-size: 92%;
+	font-family: Helvetica, Arial, "Helvetica Neue", Verdana, Geneva, Arial, "Sans Serif";
+	font-size: 1em;
 	margin: -0px;
 	text-align: left;
-	
+	line-height: 1.5em;
+	font-weight: lighter;
 }
 
 h1 {
-	color: #a0a0a0;
 	font-size: 1.5em;
 	margin-top: 18px;
 	margin-bottom: 18px;
+	font-weight: lighter;
 }
 
 h2 {
-	color: #a0a0a0;
-	font-size: 1.1em;
+	font-size: 1.35em;
 	margin-top: 16px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
-}
+	font-weight: lighter;
+	}
 
 h3 {
-	color: #a0a0a0;
-	font-size: 1em;
+	font-size: 1.2em;
 	margin-top: 14px;
 	margin-bottom: 14px;
-}
-
-div {
-	padding-left: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right:3px;
+	font-weight: lighter;
 }
 
 a{
-	color: darkorange;
-	text-decoration: none;
+	color: #111;
+	text-decoration: underline;
+}
+a:hover{
+	text-decoration: underline;
 }
 
+p{
+	line-height: 1.45em;
+}
 /*The column that contains everything*/
 #wrapper{
 	padding: 0px;
 	width: 500px;  /* contrain the width */
 	margin:0 auto;	/* auto-centers the element*/
+	-webkit-overflow-scrolling: touch;
+
 }
 
 /* The website title */
 #banner{
-	font-weight: bolder;
-	/*background-color: rgba(0,0,0,0.5);*/
-	border-left:2px solid #808080;
-	border-bottom:2px solid #808080;
+	font-weight: lighter;
+	border-left:1px solid darkorange;
 }
 
 #banner , #footer , #navigation, .nav{
 	text-align: center;
-	float: right;
 	position: fixed;
 	display: inline;
 	margin: 0 auto;
-	margin-left: 510px;
+	margin-left: 510px;	
 	padding: 10px;
 	width: 240px;
+	clear: left;
 }
-
+#banner a, #footer a, #navigation a, .nav a{
+	text-decoration: none;
+	color: darkorange;
+}
 #banner a{
 	font-size: 1.8em;
 	text-decoration: none;
 }
 #pre_footer{
 	text-align: center;
-	text-shadow: none;
 	margin: 0 auto;
 	padding: 40px;
 }
 
 #footer {
 	text-align: left;
-	#background-color: rgba(0,0,0,0.5);
 	font-size: 0.75em;
-	padding:12px;
 	bottom: 0px;
 	height: 30px;
 	padding:10px;
-		border-left: 2px solid #808080;
+	line-height: 1.3em;
+	border-left:1px solid darkorange;	
 }
 
 span.date{
@@ -109,23 +110,20 @@ span.date{
 	padding-right: 10px;
 }
 .nav{
-	#background-color: rgba(0,0,0,0.2);
-	border-left: 2px solid #808080;
+	border-left:1px solid darkorange;
 	text-align: left;
 	bottom: 0px;
 	padding-bottom: 60px;
 }
-span.date a, div.nav a{
+span.date a{
 	line-height: 20px;
+	color: black;
+	text-decoration: underline;
 }
 
 
 #navigation {
-	position: fixed;
 	top: 50px;
-	margin-left: 510px;
-	width:260px;
-	/*background-color: rgba(0,0,0,0.2);*/
 	padding: 0px;
 	text-align: center;	
 }
@@ -134,32 +132,27 @@ span.date a, div.nav a{
 }
 #navigation a, #navigation span, #navigation a, #navigation a:hover, #navigation a.category-link.selected{
 	float: left;
-	font-style: bold;
 	font-size : 1.1em;
 	text-align: left;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom:5px;
 	padding-top:5px;
-	/*background-color: #606060;*/
 	width: 100px;
-	border-left: 2px solid #808080;
+	border-left:1px solid darkorange;
 }
 #navigation a:hover {
 	background-color: rgba(0,0,0,0.1);/*#2E2E2E;*/
 }
 
 #navigation a.category-link.selected{
-	/*background-color: rgba(51,51,51,0.5);*/
-	border: 2px solid #808080;
+	border:1px solid darkorange;
 	border-left: none;	
 }
 
-div.title{
-	text-transform: uppercase;	
-	padding: 0px;
+div.post{
+	padding: 2em 0 2em 0;
 }
-
 /*To make the post list normal fonted and not uppercased*/
 div.list div.title a{
 	text-transform: none;
@@ -171,22 +164,12 @@ div.list{
 }
 .title{
 	text-transform: uppercase;
-	font-size: 1em;
+}
+.title a, a.title{
+	color: darkorange;
+	text-decoration: none;
 }
 
-div.post{
-	padding: 0px;
-	padding-top: 10px;
-	margin: -0px;
-	line-height: 1.3em;
-
-}
-
-div.content{
-	padding-left: 10px;
-	padding-right: 10px;
-	margin: -0px;
-}
 /*Just because I find the default font too big.*/
 div.embedded_gist{
 	margin-left: -10px;
@@ -194,11 +177,12 @@ div.embedded_gist{
 	font-size: 0.7em;
 	text-shadow: none;
 }
+
 pre code, code{
     font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
    	font-size: 0.75em;
 	max-width: 480px;
-	color: #AAA;
+	
 }
 
 ul,ol{

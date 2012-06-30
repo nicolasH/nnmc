@@ -16,9 +16,13 @@ function printHead(){
         $html= "
         <head>
                 <title> $title ~ ".SITE_NAME."</title>
-                <link type=\"text/css\" rel=\"stylesheet\" href=\"" . BASE_URI . CSS_FILE ."\" />
-";
-        #<meta name=\"viewport\" content=\"width=500, user-scalable=yes\">
+                <link rel=\"stylesheet\" media=\"all\" href=\"". BASE_URI . CSS_FILE ."\" />
+                <link rel=\"stylesheet\" media=\"only screen and (max-width: 800px)\" href=\"". BASE_URI . CSS_MOBILE_FILE ."\" />
+                <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
+        ";
+        #<link rel=\"stylesheet\" media=\"only screen and (max-width: 800px)\" href=\"". BASE_URI . CSS_MOBILE_FILE ."\" />
+        #<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\">
+        #<meta name=\"viewport\" content=\"width=800, user-scalable=yes\">
         $html.= "\t</head>\n";
         return $html;
 }

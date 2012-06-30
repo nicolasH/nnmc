@@ -1,0 +1,94 @@
+/* @override http://nnmc.loc/mobile.css */
+#wrapper{
+	padding: 5px;
+}
+/* The website title */
+#banner{
+	font-weight: lighter;
+	border:none;
+}
+
+#banner , #footer , #navigation, .nav{
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-left: 0px;	
+	padding: 10px;
+	width: 500px;
+	clear: left;
+	position: relative;
+	float: none;
+}
+#banner a, #footer a, #navigation a, .nav a{
+	text-decoration: none;
+	color: darkorange;
+}
+#banner a{
+	font-size: 1.8em;
+	text-decoration: none;
+}
+#pre_footer{
+	text-align: center;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+#footer {
+	text-align: center;
+	font-size: 0.75em;
+	bottom: 0px;
+	height: 30px;
+	padding:10px;
+	line-height: 1.3em;
+	border-left:none;	
+}
+
+span.date{
+	margin-left: 0px;
+	width: 120px;
+	padding-right: 10px;
+}
+.nav{
+	border:none;
+	text-align: right;
+	bottom: 0px;
+	padding: 10px;
+}
+span.date a{
+	line-height: 20px;
+	color: black;
+	text-decoration: underline;
+}
+
+
+#navigation {
+	margin-top: -30px;
+	padding: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 500px;
+	height: 100px;
+}
+#navigation span{
+	height: 0px;
+	display: none;
+}
+#navigation a, #navigation span, #navigation a, #navigation a:hover, #navigation a.category-link.selected{
+	float: left;
+	text-align:center;
+	font-size : 1.1em;
+	text-align: left;
+	margin: 0px;
+	padding: 10px;
+	width: 100px;
+	border:none;
+	border-bottom:1px solid darkorange;
+}
+#navigation a:hover {
+	background-color: rgba(0,0,0,0.1);/*#2E2E2E;*/
+}
+
+#navigation a.category-link.selected{
+	border:1px solid darkorange;
+	border-bottom:none;
+}

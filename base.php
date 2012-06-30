@@ -6,6 +6,7 @@ define('CONTENT_HANDLER','markdown_extra.php');
 
 define('DEFAULT_PAGE', 'notes/Home.txt');
 define('CSS_FILE', 'index.css');
+define('CSS_MOBILE_FILE', 'mobile.css');
 
 define('SEARCH_QUERY','http://www.google.com/search?q=inurl%3Aniconomicon.net');
 
