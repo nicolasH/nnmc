@@ -9,8 +9,9 @@ html{
 	background-color: white;
 	margin:-0px;
 	padding: -0px;
-	color: black;
+	color: #c1c1c1;
 	font-weight: lighter;
+	background: #474747;
 }
 
 body {
@@ -22,11 +23,15 @@ body {
 	font-weight: lighter;
 }
 
+h1,h2,h3{
+	font-weight: lighter;	
+	color: #c1c1;
+}
+
 h1 {
 	font-size: 1.5em;
 	margin-top: 18px;
 	margin-bottom: 18px;
-	font-weight: lighter;
 }
 
 h2 {
@@ -34,22 +39,21 @@ h2 {
 	margin-top: 16px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
-	font-weight: lighter;
 	}
 
 h3 {
 	font-size: 1.2em;
 	margin-top: 14px;
 	margin-bottom: 14px;
-	font-weight: lighter;
 }
 
 a{
-	color: #111;
+	color: inherit;
 	text-decoration: underline;
 }
 a:hover{
 	text-decoration: underline;
+	color:darkgray;
 }
 
 p{
@@ -61,7 +65,6 @@ p{
 	width: 500px;  /* contrain the width */
 	margin:0 auto;	/* auto-centers the element*/
 	-webkit-overflow-scrolling: touch;
-
 }
 
 /* The website title */
@@ -104,20 +107,25 @@ p{
 	border-left:1px solid darkorange;	
 }
 
-span.date{
-	margin-left: -100px;
-	width: 120px;
-	padding-right: 10px;
-}
 .nav{
 	border-left:1px solid darkorange;
 	text-align: left;
 	bottom: 0px;
 	padding-bottom: 60px;
 }
+
+span.date{
+	color: inherit;
+	font-size: 0.8em;
+	margin-left: -110px;
+	width: 120px;
+	padding-right: 10px;
+}
+
 span.date a{
 	line-height: 20px;
-	color: black;
+	color: inherit;
+	font-weight: lighter;
 	text-decoration: underline;
 }
 
@@ -166,6 +174,7 @@ div.list{
 	text-transform: uppercase;
 }
 .title a, a.title{
+	font-size: 1.35em;
 	color: darkorange;
 	text-decoration: none;
 }
@@ -178,12 +187,11 @@ div.embedded_gist{
 	text-shadow: none;
 }
 
-pre code, code{
+pre,pre code, code{
     font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
    	font-size: 0.75em;
-	max-width: 480px;
-	
 }
+/*I know about overflow:scroll, but it is not obvious when OSX & iOS hides the bloody scroll bars.*/
 
 ul,ol{
 	margin-top: 4px;

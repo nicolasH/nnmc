@@ -43,20 +43,23 @@
 	border-left:none;	
 }
 
-span.date{
-	margin-left: 0px;
-	width: 120px;
-	padding-right: 10px;
-}
+
 .nav{
 	border:none;
 	text-align: right;
 	bottom: 0px;
 	padding: 10px;
 }
+
+span.date{
+	margin:0px;
+	padding:0px
+	padding-bottom: 10px;
+	width: 500px;
+	float: left;
+}
 span.date a{
 	line-height: 20px;
-	color: black;
 	text-decoration: underline;
 }
 
