@@ -2,6 +2,8 @@
 	http://127.0.0.1/~niko/nnmc/index.css
 	http://127.0.01/~niko/nnmc/index.css
 	http://nnmc.loc/index.css
+	http://www.nnmc.loc/index.css
+	
 */
 
 html{
@@ -178,7 +180,17 @@ div.list{
 	color: darkorange;
 	text-decoration: none;
 }
-
+div.footnotes{
+	font-size: 0.8em;
+}
+sup{
+	display: inline-block;	
+	padding: -0px;
+	margin: -0px;
+	margin-top: -5px;
+	height: 1.5em;
+	font-size: 0.6em;
+}
 /*Just because I find the default font too big.*/
 div.embedded_gist{
 	margin-left: -10px;
