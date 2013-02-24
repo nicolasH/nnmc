@@ -1,32 +1,41 @@
-/* @override http://nnmc.loc/mobile.css */
+/* @override http://nnmc.loc/mobile.css
+	http://www.nnmc.loc/mobile.css */
 #wrapper{
 	padding: 5px;
-}
-/* The website title */
-#banner{
-	font-weight: lighter;
-	border:none;
 }
 
 #banner , #footer , #navigation, .nav{
 	text-align: center;
 	display: block;
 	margin: 0 auto;
-	margin-left: 0px;	
 	padding: 10px;
 	width: 500px;
 	clear: left;
-	position: relative;
+	position: static;
 	float: none;
 }
+
 #banner a, #footer a, #navigation a, .nav a{
 	text-decoration: none;
 	color: darkorange;
 }
+
 #banner a{
 	font-size: 1.8em;
 	text-decoration: none;
+	padding-left: 128px;
+	padding-right: 128px;
+	text-align: center;
 }
+
+/* The website title */
+#banner{
+	font-weight: lighter;
+	border:none;
+	padding-top: 100px;
+	text-align: center;
+}
+
 #pre_footer{
 	text-align: center;
 	margin: 0 auto;
@@ -44,33 +53,13 @@
 }
 
 
-.nav{
-	border:none;
-	text-align: right;
-	bottom: 0px;
-	padding: 10px;
-}
-
-span.date{
-	margin:0px;
-	padding:0px
-	padding-bottom: 10px;
-	width: 500px;
-	float: left;
-}
-span.date a{
-	line-height: 20px;
-	text-decoration: underline;
-}
-
-
 #navigation {
-	margin-top: -30px;
+	margin-top: 0px;
+	margin-right: 0px;
 	padding: 10px;
-	padding-bottom: 20px;
 	text-align: center;
 	width: 500px;
-	height: 100px;
+	height: 40px;
 }
 #navigation span{
 	height: 0px;
@@ -94,4 +83,23 @@ span.date a{
 #navigation a.category-link.selected{
 	border:1px solid darkorange;
 	border-bottom:none;
+}
+
+.nav{
+	border:none;
+	text-align: right;
+	bottom: 0px;
+	padding: 10px;
+}
+
+span.date{
+	margin:0px;
+	padding:0px
+	padding-bottom: 10px;
+	width: 500px;
+	float: left;
+}
+span.date a{
+	line-height: 20px;
+	text-decoration: underline;
 }

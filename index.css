@@ -3,7 +3,6 @@
 	http://127.0.01/~niko/nnmc/index.css
 	http://nnmc.loc/index.css
 	http://www.nnmc.loc/index.css
-	
 */
 
 html{
@@ -69,11 +68,7 @@ p{
 	-webkit-overflow-scrolling: touch;
 }
 
-/* The website title */
-#banner{
-	font-weight: lighter;
-	border-left:1px solid darkorange;
-}
+
 
 #banner , #footer , #navigation, .nav{
 	text-align: center;
@@ -97,6 +92,13 @@ p{
 	text-align: center;
 	margin: 0 auto;
 	padding: 40px;
+}
+/* The website title */
+#banner{
+	font-weight: lighter;
+	border-left:1px solid darkorange;
+	background: url("niconomicon.png") no-repeat center 20px;
+	padding-top: 104px;
 }
 
 #footer {
@@ -133,7 +135,7 @@ span.date a{
 
 
 #navigation {
-	top: 50px;
+	top: 134px;
 	padding: 0px;
 	text-align: center;	
 }
