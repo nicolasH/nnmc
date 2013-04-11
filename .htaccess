@@ -84,6 +84,9 @@ DirectoryIndex index.php
   # RewriteCond %{HTTP_HOST} ^www\.example\.com$ [NC]
   # RewriteRule ^(.*)$ http://example.com/$1 [L,R=301]
 
+  # ignoring rewrite for some directories:
+  RewriteRule ^status-board - [L]
+  DirectoryIndex index.html
   # Modify the RewriteBase if you are using Drupal in a subdirectory and
   # the rewrite rules are not working properly.
   #RewriteBase /drupal
