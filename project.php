@@ -136,7 +136,7 @@ function printHierarchie($path,$file,$uri){
 function printBlurb($path,$projectName,$uri){
         //$html.= "blurb : $path, $projectName, $uri <br/>\n";
         $inText = file_get_contents($path);
-        return "<div><a href=\"$uri\">$projectName</a>".'<p>'.$inText.'</p>'."</div>\n";
+        return "<div><p><a href=\"$uri\">$projectName</a> &mdash; ".$inText.'</p>'."</div>\n";
 
 }
 ////////////////////////////
